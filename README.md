@@ -1,12 +1,72 @@
-# React + Vite
+# 🪝 Custom Hook for Fetching Data in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to create and use a **custom React hook** (`useFetch`) for fetching data from APIs in a reusable way.  
+It also includes a **loader component** to improve user experience while data is being fetched.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+1. **Custom Hook (`useFetch`)**  
+   - Encapsulates the logic for fetching data.  
+   - Returns `data` and `loading` state.  
+   - Can be reused across multiple components.  
 
-## Expanding the ESLint configuration
+2. **Multiple Fetch Implementations**  
+   - The custom hook is used in different components to fetch various types of data.  
+   - Demonstrates flexibility and reusability.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Loader Integration**  
+   - Displays a spinner loader while fetching data.  
+   - Enhances user experience with feedback during API calls.  
+
+---
+
+## 📂 Project Structure
+src/
+├── Components/
+│ ├── FetchData.jsx # Example component using the custom hook
+│ ├── FetchYogaData.jsx # Fetching Yoga API data
+│ ├── FetchData.css # Styles for data display
+│ └── UseFetch.jsx # Custom hook implementation
+├── App.jsx # Main app entry
+├── index.css
+└── main.jsx
+
+yaml
+Copy code
+
+---
+
+## 🛠️ Technologies Used
+- React.js  
+- JavaScript (ES6+)  
+- CSS3  
+
+---
+
+## ▶️ Usage
+1. Clone the repository: 
+   git clone https://github.com/vamshi-ande/custom-hook-for-fetching-data.git
+Install dependencies:
+
+
+npm install
+Start the project:
+
+
+npm run dev
+📸 Preview
+Loader shown while data is being fetched.
+
+Data displayed dynamically once fetched.
+
+📌 Learnings
+How to create and use custom hooks in React.
+
+How to handle loading states for a better user experience.
+
+How to reuse logic across multiple components.
+
+
+
+👉 Do you want me to also add a **demo screenshot + GIF section** in the README (with placeholders), so your repo looks more 
